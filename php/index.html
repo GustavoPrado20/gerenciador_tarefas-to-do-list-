@@ -29,14 +29,16 @@
                         <button id="btnSignUp">Sign Up</button>
                     </section>
 
-                    <form action="" id="signIn" name="signIn">
-                        <input type="text" placeholder="Email" name="email" class="input-signIn">
+                    <form action="#" id="signIn" name="signIn" method="POST">
+                        <input type="text" placeholder="Email" name="email" class="input-signIn" id="email">
                         <i class="fas fa-envelope iEmail"></i>
+                        <span class='erro-validacao msg-email'></span>
 
-                        <input type="password" placeholder="Password" name="password" class="input-signIn">
+                        <input type="password" placeholder="Password" name="password" class="input-signIn" id="password" autocomplete="on">
                         <i class="fas fa-lock iPassword"></i>
+                        <span class='erro-validacao2 msg-password'></span>
 
-                        <section class="container-check">
+                        <section class="container-check-login">
                             <input type="checkbox" />
                             <span>Remember Password</span>
                         </section>
@@ -44,20 +46,24 @@
                         <button type="submit">Sign In</button>
                     </form>
 
-                    <form action="" id="signUp" name="signUp">
-                        <input type="text" placeholder="Nome" name="" class="input-signUp">
+                    <form action="#" id="signUp" name="signUp" method="POST">
+                        <input type="text" placeholder="Nome" name="nome" class="input-signUp" id="nome">
                         <i class="fas fa-user iUser"></i>
+                        <span class='erro-validacao-nome msg-nome'></span>
 
-                        <input type="text" placeholder="Email" name="email" class="input-signUp">
+                        <input type="text" placeholder="Email" name="email" class="input-signUp" id="emailR">
                         <i class="fas fa-envelope iEmail2"></i>
+                        <span class='erro-validacao-email msg-emailR'></span>
 
-                        <input type="password" placeholder="Password" name="password" class="input-signUp">
+                        <input type="password" placeholder="Password" name="password" class="input-signUp" id="passwordR" autocomplete="on">
                         <i class="fas fa-lock iPassword1"></i>
+                        <span class='erro-validacao-password msg-passwordR'></span>
 
-                        <input type="password" placeholder="Password Confirmation" name="password-confirmation" class="input-signUp">
+                        <input type="password" placeholder="Password Confirmation" name="password-confirmation" autocomplete="on" class="input-signUp" id="password-confirmation">
                         <i class="fas fa-lock iPassword2"></i>
+                        <span class='erro-validacao-password-confirmation msg-password-confirmation'></span>
 
-                        <section class="container-check">
+                        <section class="container-check-register">
                             <input type="checkbox" required/>
                             <span>I accept all <a href="">Terms</a></span>
                         </section>
@@ -68,5 +74,7 @@
             </section>
        </main> 
        <script type="text/javascript" src="../js/form-Index.js"></script>
+       <script type="text/javascript" src="../js/login-validation.js"></script>
+       <script type="text/javascript" src="../js/cadastro-validation.js"></script>
     </body>
 </html>

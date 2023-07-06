@@ -65,6 +65,7 @@ form {
     height: 400px;
 }
 
+/* Estilização dos botoes de transição de formulario */
 .btn-form {
     margin-top: 40px;
     position: relative;
@@ -89,6 +90,7 @@ form {
     transition: .3s;
 }
 
+/* Inputs dos formularios */
 .input-signIn {
     border: none;
     margin-top: 40px;
@@ -107,6 +109,7 @@ form {
     width: 100%;
 }
 
+/* Estilização dos botoes */
 button[type="submit"] {
     background: #660fc8;
     color: #ffffff;
@@ -125,11 +128,33 @@ button[type="submit"]:active {
     transform: scale(0.96);
 }
 
-.container-check {
+#signUp > button[type="submit"]{
+    margin-top: 25px;
+}
+
+/* containers dos checkbox */
+.container-check-login {
+    margin: 10px 0 0 5px;
+    width: 80%;
+    margin-top: 30px;
+    font-size: 13px;
+}
+
+.container-check-register {
     margin: 10px 0 0 5px;
     width: 80%;
     font-size: 13px;
 }
+
+.container-check-register > input[type="checkbox"]
+{
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* ------------ */
 
 #signIn {
     left: 25px;
@@ -139,6 +164,7 @@ button[type="submit"]:active {
     left: 450px;
 }
 
+/* estilização dos icones */
 i {
     position: absolute;
     left: 0;
@@ -167,7 +193,57 @@ i {
 
 .iPassword2 {
     top: 200px;
-}  
+}
+
+/* Validação Login */
+.erro-validacao {
+    color: #660fc8;
+    position: absolute;
+    top: 75px;
+    font-size: .8rem;
+    display: none;
+}
+
+.erro-validacao2 {
+    color: #660fc8;
+    position: absolute;
+    top: 150px;
+    font-size: .8rem;
+    display: none;
+}
+
+/* Validação Registro */
+.erro-validacao-nome {
+    color: #660fc8;
+    position: absolute; 
+    top: 58px;
+    font-size: .8rem;
+    display: none;
+}
+
+.erro-validacao-email {
+    color: #660fc8;
+    position: absolute;
+    top: 118px;
+    font-size: .8rem;
+    display: none;
+}
+
+.erro-validacao-password {
+    color: #660fc8;
+    position: absolute; 
+    top: 178px;
+    font-size: .8rem;
+    display: none;
+}
+
+.erro-validacao-password-confirmation {
+    color: #660fc8;
+    position: absolute;
+    top: 238px;
+    font-size: .8rem;
+    display: none;
+}
 
 @media only screen and (max-width: 950px) {
     .container-form
