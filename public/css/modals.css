@@ -1,0 +1,103 @@
+.fechar-modal {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #f30b0b;
+    cursor: pointer;
+}
+
+.fechar-modal i {
+    font-size: 30px;
+}
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+.modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    z-index: 10;
+    width: 26vw;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+#fade,
+#modal-tarefa, #modal-busca-tarefa, #modal-update-tarefa {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+#modal-tarefa.hide,#modal-busca-tarefa.hide,#modal-update-tarefa.hide, #fade.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.header-modal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* estilização do form */
+
+.form-add {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+    margin: 0 auto;   
+}
+
+.form-add label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-add input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.form-add input[type="submit"]{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #660fc6;
+    margin-top: 20px;
+    color: #fefefe;
+    text-transform: uppercase;
+    font-weight: bold;  
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.form-add input[type="submit"]:hover {
+    background: transparent;
+    color: #660fc6;
+    box-shadow: inset 0 0 0 3px #660fc6;
+}
+
+.form-add input[type="submit"]:active
+{
+    transform: scale(0.96);
+}
