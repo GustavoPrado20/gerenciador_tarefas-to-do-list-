@@ -42,3 +42,8 @@ const mobileNavbar = new MobileNavbar(
 ".nav-list li",
 );
 mobileNavbar.init();
+
+function setTopo(){
+    $(window).scrollTop(0);
+}
+$(window).bind('scroll', setTopo);

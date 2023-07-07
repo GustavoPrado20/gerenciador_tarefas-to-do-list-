@@ -110,7 +110,7 @@ form {
 }
 
 /* Estilização dos botoes */
-button[type="submit"] {
+input[type="submit"] {
     background: #660fc8;
     color: #ffffff;
     border-radius: 30px;
@@ -124,11 +124,11 @@ button[type="submit"] {
     transition: all 0.2s ease;
 }
 
-button[type="submit"]:active {
+input[type="submit"]:active {
     transform: scale(0.96);
 }
 
-#signUp > button[type="submit"]{
+#signUp > input[type="submit"]{
     margin-top: 25px;
 }
 

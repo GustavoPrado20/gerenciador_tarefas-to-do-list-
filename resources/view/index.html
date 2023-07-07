@@ -29,7 +29,7 @@
                         <button id="btnSignUp">Sign Up</button>
                     </section>
 
-                    <form action="#" id="signIn" name="signIn" method="POST">
+                    <form action="../../backend/logar.php" id="signIn" name="signInF" method="POST">
                         <input type="text" placeholder="Email" name="email" class="input-signIn" id="email">
                         <i class="fas fa-envelope iEmail"></i>
                         <span class='erro-validacao msg-email'></span>
@@ -43,10 +43,10 @@
                             <span>Remember Password</span>
                         </section>
 
-                        <button type="submit">Sign In</button>
+                        <input type="submit" name="signIn" value="Sign In">
                     </form>
 
-                    <form action="#" id="signUp" name="signUp" method="POST">
+                    <form action="../../backend/registrar.php" id="signUp" name="signUpF" method="POST">
                         <input type="text" placeholder="Nome" name="nome" class="input-signUp" id="nome">
                         <i class="fas fa-user iUser"></i>
                         <span class='erro-validacao-nome msg-nome'></span>
@@ -68,7 +68,7 @@
                             <span>I accept all <a href="">Terms</a></span>
                         </section>
 
-                        <button type="submit">Sign Up</button>
+                        <input type="submit" name="signUp" value="Sign UP">
                     </form>
                 </section>
             </section>

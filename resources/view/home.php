@@ -1,3 +1,10 @@
+<?php
+    require_once "../../backend/conexao.php";
+    require_once "../../backend/funcoes.php";
+
+    session_start();
+    verificaLogin();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
@@ -33,11 +40,11 @@
                     </li>
 
                     <li>
-                        <a href="">CONFIGURAÇÕES</a>
+                        <a href="./config.php">CONFIGURAÇÕES</a>
                     </li>
 
                     <li>
-                        <a href="">LOGOUT</a>
+                        <a href="../../backend/deslogar.php">LOGOUT</a>
                     </li>
                 </ul>
             </nav>

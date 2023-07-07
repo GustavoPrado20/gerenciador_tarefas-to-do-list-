@@ -16,7 +16,6 @@ CREATE TABLE if NOT EXISTS Tarefas
     descricao TEXT,
     status VARCHAR(12) NOT NULL,
     data_criacao DATETIME DEFAULT CURRENT_TIMESTAMP,
-    data_limite DATETIME,
 
     FOREIGN KEY (id_user) REFERENCES Users (id)    
 );

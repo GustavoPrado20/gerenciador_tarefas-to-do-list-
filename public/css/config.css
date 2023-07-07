@@ -1,0 +1,109 @@
+main {
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90vw;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.perfil {
+    width: 100vw;
+}
+
+.perfil-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #8a2be2;
+    color: #fefefe;
+    border-radius: 8px 8px 0 0;
+}
+
+.perfil-header h1 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.form-config {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 0 0 8px 8px;
+}
+
+.form-config form {
+    width: 50vw;
+}
+
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #fefefe;
+    box-shadow: 1px 1px 6px #660fc8;
+    margin-right: 110px;
+}
+
+.input-box input:hover{
+    background: #eeeeee75;
+}
+
+.input-box label {
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder{
+    color: #000000be;
+}
+
+.btn-update input[type="submit"]
+{
+    padding: 10px 20px;
+    color: #fefefe;
+    background: #660fc8;
+    cursor: pointer;
+    transition: all 400ms ease;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.btn-update input[type="submit"]:hover{
+    background: transparent;
+    color: #660fc6;
+    box-shadow: inset 0 0 0 3px #660fc6;
+}
+
+.btn-update input[type="submit"]:active{
+    transform: scale(0.96);
+}

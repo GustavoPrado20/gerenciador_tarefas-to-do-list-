@@ -46,7 +46,7 @@ function validaCadastro(evt) {
 		caixa_senha.style.display = 'block';
 		contErro += 1;
 	} else if (senha.value.length < 8) {
-		caixa_senha.innerHTML = "Favor preencher a Senha com o mínimo de 6 caracteres";
+		caixa_senha.innerHTML = "Favor preencher a Senha com o mínimo de 8 caracteres";
 		caixa_senha.style.display = 'block';
 		contErro += 1;
 	} else {
@@ -60,7 +60,7 @@ function validaCadastro(evt) {
 		caixa_senha2.style.display = 'block';
 		contErro += 1;
 	} else if (senha2.value.length < 8) {
-		caixa_senha2.innerHTML = "Favor preencher o campo Confirmação de Senha com o mínimo de 6 caracteres";
+		caixa_senha2.innerHTML = "Favor preencher o campo Confirmação de Senha com o mínimo de 8 caracteres";
 		caixa_senha2.style.display = 'block';
 		contErro += 1;
 	} else {

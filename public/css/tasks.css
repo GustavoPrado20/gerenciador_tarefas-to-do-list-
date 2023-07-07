@@ -12,6 +12,7 @@ main {
 
 .table{
     width: 100vw;
+    overflow-x: auto;
 }
 
 .table-header{
