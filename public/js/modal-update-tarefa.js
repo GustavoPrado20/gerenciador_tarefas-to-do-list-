@@ -1,4 +1,6 @@
-const openModalButtonU = document.querySelector("#update-tarefa");
+const idModalButton = document.getElementById("id_task");
+
+const openModalButtonU = document.querySelector(".update-tarefa"); 
 const closeModalButtonU = document.querySelector("#fecha-modal-update");
 const modalU = document.querySelector("#modal-update-tarefa");
 

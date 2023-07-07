@@ -74,24 +74,26 @@
 
                         <tbody>
                         <?php
-                            $dadosTask = listarTarefas($conexao);
-                            if(!empty($dadosTask)){           
-                                foreach($dadosTask as $key => $task)
-                                {  
+                            if(isset($_GET['buscar'])){
+                                $dadosTask = buscarTarefa($_GET['titulo'], $_GET['status'], $conexao);
+                                if(!empty($dadosTask)){           
+                                    foreach($dadosTask as $key => $task)
+                                    {  
                         ?>
-                                    <tr>
-                                        <td><?php echo $task['titulo'];?></td>
-                                        <td><?php echo $task['descricao']; ?></td>
-                                        <td><?php echo $task['data_criacao']; ?></td>
-                                        <td><?php echo $task['status']; ?></td>
-                                        <td>
-                                            <button class="update-tarefa"><i class="fa-solid fa-pen-to-square"></i></button>
+                                        <tr>
+                                            <td><?php echo $task['titulo'];?></td>
+                                            <td><?php echo $task['descricao']; ?></td>
+                                            <td><?php echo $task['data_criacao']; ?></td>
+                                            <td><?php echo $task['status']; ?></td>
+                                            <td>
+                                                <button class="update-tarefa"><i class="fa-solid fa-pen-to-square"></i></button>
 
-                                            <button><a href="../../backend/delete-tarefas.php?id_task=<?php echo $task['id']; ?>"><i class="fa-solid fa-trash"></i></a></button>
-                                        </td>
-                                        <input type="hidden" id="id_task" name="update-tarefa-<?php echo $task['id'] ?>" value="<?php echo $task['id'] ?>">
-                                    </tr>   
+                                                <button><a href="../../backend/delete-tarefas.php?id_task=<?php echo $task['id']; ?>"><i class="fa-solid fa-trash"></i></a></button>
+                                            </td>
+                                            <input type="hidden" id="id_task" name="update-tarefa-<?php echo $task['id'] ?>" value="<?php echo $task['id'] ?>">
+                                        </tr>   
                         <?php
+                                    }
                                 }
                             } 
                         ?>

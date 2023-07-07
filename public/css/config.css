@@ -107,3 +107,35 @@ main {
 .btn-update input[type="submit"]:active{
     transform: scale(0.96);
 }
+
+.erro-validacao-nome {
+    color: #660fc8;
+    position: absolute;
+    margin-top: 80px;
+    font-size: .8rem;
+    display: none;
+}
+
+.erro-validacao-email {
+    color: #660fc8;
+    position: absolute;
+    margin-top: 80px;
+    font-size: .8rem;
+    display: none;
+}
+
+.erro-validacao-password {
+    color: #660fc8;
+    position: absolute;
+    margin-top: 80px;
+    font-size: .8rem;
+    display: none;
+}
+
+.erro-validacao-password-confirmation {
+    color: #660fc8;
+    position: absolute;
+    margin-top: 80px;
+    font-size: .8rem;
+    display: none;
+}

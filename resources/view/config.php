@@ -56,27 +56,31 @@
                 </section>
 
                 <section class="form-config">
-                    <form action="">
+                    <form action="../../backend/update-perfil.php" id="update-config" method="POST">
                         <section class="input-group">
 
                             <section class="input-box">
                                 <Label for="nome">Nome</Label>
-                                <input type="text" name="nome" placeholder="Nome" id="nome" require>
+                                <input type="text" name="nome" placeholder="Nome" id="nome" value="<?php echo $_SESSION['nome']; ?>" require>
+                                <span class='erro-validacao-nome msg-nome'></span>
                             </section>
 
                             <section class="input-box">
                                 <Label for="password">Senha</Label>
                                 <input type="password" name="password" placeholder="Senha" id="password" require>
+                                <span class='erro-validacao-password msg-passwordR'></span>
                             </section>
                         
                             <section class="input-box">
                                 <label for="email">Email</label>
-                                <input type="text" name="email" placeholder="Email" id="email" require>
+                                <input type="text" name="email" placeholder="Email" id="email" value="<?php echo $_SESSION['email']; ?>" require>
+                                <span class='erro-validacao-email msg-emailR'></span>
                             </section>  
 
                             <section class="input-box">
                                 <Label for="password_confirmation">Confirmação de Senha</Label>
                                 <input type="password" name="password" placeholder="Confirmação Senha" id="password_confirmation" require>
+                                <span class='erro-validacao-password-confirmation msg-password-confirmation'></span>
                             </section>
 
                         </section>
@@ -90,5 +94,6 @@
         </main>
 
         <script type="text/javascript" src="../../public/js/mobile-navbar.js"></script>
+        <script type="text/javascript" src="../../public/js/config-validacao.js"></script>
     </body>
 </html>

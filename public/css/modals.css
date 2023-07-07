@@ -34,13 +34,13 @@
 }
 
 #fade,
-#modal-tarefa, #modal-busca-tarefa, #modal-update-tarefa {
+#modal-update-tarefa, #modal-tarefa, #modal-busca-tarefa {
   transition: 0.5s;
   opacity: 1;
   pointer-events: all;
 }
 
-#modal-tarefa.hide,#modal-busca-tarefa.hide,#modal-update-tarefa.hide, #fade.hide{
+#modal-update-tarefa.hide, #modal-tarefa.hide,#modal-busca-tarefa.hide, #fade.hide{
     opacity: 0;
     pointer-events: none;
 }
